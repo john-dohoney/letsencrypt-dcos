@@ -1,5 +1,8 @@
 # Let's Encrypt DC/OS!
 
+!!! Change to the Base -- Looks like LetsEncrypt made a few change, as of now, the only change is to the Dockerfile.  Also, this has been tested on DC/OS 1.8.x and 1.9.x -- older versions but many peopl are still enjoying great success in production.  So, tested with Marathon-lb 1.8 and 1.11
+
+
 This is a sample [Marathon](https://github.com/mesosphere/marathon) app for encrypting your [Marathon-lb](https://github.com/mesosphere/marathon-lb) HAProxy endpoints using [Let's Encrypt](https://letsencrypt.org/). With this, you can automatically generate and renew valid SSL certs with Marathon-lb.
 
 ## Getting started

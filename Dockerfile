@@ -7,7 +7,8 @@ RUN apt-get update \
   && apt-get install -y unzip curl python-pip \
   && pip install --upgrade pip \
   && pip install virtualenv --upgrade \
-  && curl -Ls -o /certbot.zip https://github.com/certbot/certbot/archive/v${CERTBOT_VERSION}.zip \
+  && curl -O https://codeload.github.com/certbot/certbot/zip/v${CERTBOT_VERSION} \
+  && mv v${CERTBOT_VERSION} certbot.zip \
   && unzip certbot.zip \
   && mv certbot-${CERTBOT_VERSION} certbot \
   && cd certbot \
